@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Student Sphere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="./courses.css">
+    
+</head>
+<body>
+    <header>
+       <div class="brand">
+            <i class="fas fa-book-open"></i>
+            <h1>Student Sphere</h1>
+        </div>
+         <ul>
+            <li><a href="./index.html">Home</a></li>
+            </ul>
+    </header>
+    <button id="addCourseBtn" style="display:none;"><a href="./addcourse.html">Add new course +</a></button>
+    <div id="coursesContainer"></div>
+
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2>👩‍🎓 Registered Students</h2>
+          <div id="studentList" class="student-list"></div>
+        </div>
+      </div>
+  
+    
+    <script src="./courses.js"></script>
+</body>
+</html>

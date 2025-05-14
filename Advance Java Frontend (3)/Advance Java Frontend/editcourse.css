@@ -1,0 +1,119 @@
+/* Basic Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2E2E2E; /* Charcoal Gray */
+    background-color: #FAFAFA; /* Soft White */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+header .logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+header h2 {
+    margin: 0;
+    color: #2C3E94; /* Royal Blue */
+}
+
+/* Main Content Styling */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2C3E94; /* Royal Blue */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2E2E2E; /* Charcoal Gray */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:read-only {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+/* Button Styling */
+#editCourseBtn {
+    background-color: #F9C80E; /* Warm Yellow */
+    color: #2E2E2E; /* Charcoal Gray */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#editCourseBtn:hover {
+    background-color: #F0B207; /* Darker Warm Yellow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .home-link {
+        margin-bottom: 10px;
+    }
+}

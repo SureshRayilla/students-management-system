@@ -1,0 +1,112 @@
+/* Basic Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2E2E2E; /* Charcoal Gray */
+    background-color: #FAFAFA; /* Soft White */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form horizontally */
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the logo/home link and heading */
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width header */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+header img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+header h2 {
+    margin: 0;
+    color: #2C3E94; /* Royal Blue */
+}
+
+header h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #2E2E2E; /* Charcoal Gray */
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Keep form width within bounds */
+    max-width: 500px; /* Maximum form width */
+    margin-top: 20px; /* Add some space between header and form */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing between input elements */
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input::placeholder {
+    color: #7D7D7D; /* Cool Gray for placeholder text */
+}
+
+button[type="submit"] {
+    background-color: #F9C80E; /* Warm Yellow */
+    color: #2E2E2E; /* Charcoal Gray */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #F0B207; /* Darker Warm Yellow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header a {
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 95%; /* Slightly wider form on smaller screens */
+        padding: 20px;
+    }
+}

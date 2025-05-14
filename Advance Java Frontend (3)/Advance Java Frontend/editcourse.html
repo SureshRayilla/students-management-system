@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Course</title>
+    <link rel="stylesheet" href="./editcourse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="home-link">
+            <img src="./download.jpg" alt="logo" class="logo">
+        </a>
+        <h2>Edit Course</h2>
+    </header>
+    <main>
+        <form id="editCourseForm">
+            <div class="form-group">
+                <label for="cidInput">Course ID</label>
+                <input type="number" name="cid" id="cidInput" readonly>
+            </div>
+            <div class="form-group">
+                <label for="cnameInput">Course Name</label>
+                <input type="text" name="cname" id="cnameInput" placeholder="Course Name">
+            </div>
+            <div class="form-group">
+                <label for="durationInput">Course Duration</label>
+                <input type="text" name="duration" id="durationInput" placeholder="Course Duration">
+            </div>
+            <div class="form-group">
+                <label for="costInput">Course Cost</label>
+                <input type="number" name="cost" id="costInput" placeholder="Course Cost">
+            </div>
+            <button id="editCourseBtn" type="submit">Edit</button>
+        </form>
+    </main>
+    <script src="./editcourse.js"></script>
+</body>
+</html>
