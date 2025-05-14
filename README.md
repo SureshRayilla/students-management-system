@@ -41,7 +41,7 @@ student_management_system/
 - 📚 Course enrollment and management
 - 👨‍💼 Admin dashboard for managing students and courses
 - 🛡️ Role-based access control (student/admin)
-- ✅ Clean UI built with responsive HTML/CSS/JS (No React)
+- ✅ Clean UI built with responsive HTML/CSS/JS
 
 ---
 
